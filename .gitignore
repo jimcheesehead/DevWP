@@ -1,0 +1,26 @@
+# Ignore everything in the root except some special files
+/*
+!.gitignore
+!package.json
+!gulpfile.js
+!settings.js
+
+# Ignore the entire wordpress directory except the wp-content directory
+!wordpress
+wordpress/*
+!wordpress/wp-content/
+
+# Ignore the entire wordpress/wp-content directory except themes and plugins
+wordpress/wp-content/*
+!wordpress/wp-content/themes/
+!wordpress/wp-content/mu-plugins/
+!wordpress/wp-content/plugins/
+
+# Ignore the entire wordpress/wp-content/themes directory except custom themes
+wordpress/wp-content/themes/*
+!wordpress/wp-content/themes/devwp
+
+# Ignore the entire wordpress/wp-content/plugins directory except custom plugins
+wordpress/wp-content/plugins/*
+!wordpress/wp-content/plugins/MY_CUSTOM_PLUGIN
+
