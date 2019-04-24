@@ -49,7 +49,7 @@
 				<?php endif; ?>
 			</div><!-- .site-branding -->
 
-			<button class="navbar-toggler navbar-toggle-right" type="button" data-toogle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<?php 
