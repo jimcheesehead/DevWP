@@ -19,6 +19,7 @@ wordpress/wp-content/*
 # Ignore the entire wordpress/wp-content/themes directory except custom themes
 wordpress/wp-content/themes/*
 !wordpress/wp-content/themes/devwp
+wordpress/wp-content/themes/devwp/sass/bootstrap/*
 
 # Ignore the entire wordpress/wp-content/plugins directory except custom plugins
 wordpress/wp-content/plugins/*

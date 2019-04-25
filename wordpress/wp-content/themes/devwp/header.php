@@ -28,7 +28,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'devwp' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<nav id="menu" class="navbar navbar-expand-md navbar-light" role="navigation">
+		<nav id="menu" class="navbar navbar-expand-md navbar-dark" role="navigation">
 
 			<div class="site-branding navbar-brand">
 				<?php
