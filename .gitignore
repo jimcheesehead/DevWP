@@ -20,6 +20,8 @@ wordpress/wp-content/*
 wordpress/wp-content/themes/*
 !wordpress/wp-content/themes/devwp
 wordpress/wp-content/themes/devwp/sass/bootstrap/*
+!wordpress/wp-content/themes/devwp-purchased
+wordpress/wp-content/themes/devwp-purchased/sass/bootstrap/*
 
 # Ignore the entire wordpress/wp-content/plugins directory except custom plugins
 wordpress/wp-content/plugins/*
