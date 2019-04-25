@@ -15,7 +15,7 @@
 	get_header('special');
 ?>
 
-	<div id="primary" class="content-area col-md-8">
+	<div id="primary" class="content-area col-md-12">
 		<main id="main" class="site-main theiaStickySidebar">
 			<?php
 				while ( have_posts() ): the_post();
