@@ -12,7 +12,7 @@
  * @package DevWP
  */
 
-get_header();
+get_header('special');
 ?>
 
 	<div id="primary" class="content-area col-md-8">

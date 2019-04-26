@@ -9,9 +9,10 @@
 	 * @package DevWP
 	 */
 	
-	$containerType = get_theme_mod( 'devwp_container_type' );
-	$navbarType    = get_theme_mod( 'devwp_navbar_type' );
-
+	// $containerType = get_theme_mod( 'devwp_container_type' );
+	// $navbarType    = get_theme_mod( 'devwp_navbar_type' );
+	$containerType = 'container';
+	$navbarType = '';
 ?>
 	<!doctype html>
 <html <?php language_attributes(); ?>>
@@ -35,6 +36,7 @@
 	</a>
 
 	<?php get_template_part( 'template-parts/header', 'navbar' ); ?>
+	<!-- ### End of navbar ### -->
 
 	<?php if ( is_front_page() && ! is_home() ) :
 		// https://developer.wordpress.org/reference/functions/has_custom_header/
@@ -65,7 +67,7 @@
 			</div>
 		
 		<?php endif;
-		
+
 		$ffesb = is_active_sidebar( 'front-full-edge' );
 		$ffcsb = is_active_sidebar( 'front-full-centered' );
 		if ( $ffesb ) : ?>
@@ -77,6 +79,7 @@
 			</div>
 		
 		<?php endif; ?>
+
 		
 		<div class = "fp <?php echo esc_attr( $containerType );
 			if ( 'fixed-top' == $navbarType && ! has_custom_header() ) {
@@ -88,7 +91,6 @@
 
 	if ( is_home() ) :
 		if ( is_active_sidebar( 'home-full-edge' ) ) : ?>
-
 			<div
 				class = "header-image d-flex justify-content-center align-items-center <?php if ( 'fixed-top' == $navbarType || 'offcanvas' == $navbarType ) {
 					echo 'mt-6';
@@ -96,11 +98,11 @@
 				<?php devwp_header_blog();
 					dynamic_sidebar( 'home-full-edge' ); ?>
 			</div>
-			
+		
 			<div class = "hp1 <?php echo esc_attr( $containerType ); ?>">
-
+		
 		<?php else : ?>
-			
+		
 			<div class = "hp2 <?php echo esc_attr( $containerType );
 				if ( 'fixed-top' == $navbarType ) {
 					echo ' mt-7';
@@ -108,12 +110,8 @@
 
 		<?php endif;
 	endif;
-
+	
 	if ( ! is_front_page() && ! is_home() ) : ?>
-		<div class = "<?php echo esc_attr( $containerType ); ?>">
-		<div id = "content" class = "site-content row <?php if ( 'fixed-top' == $navbarType || 'offcanvas' == $navbarType ) {
-			echo ' mt-7';
-		} else {
-			echo 'mt-3';
-		} ?> HEADER_END">
+		<div class = "<?php echo esc_attr( $containerType ); ?> ">
+		<div id = "content" class = "site-content row <?php if ( 'fixed-top' == $navbarType || 'offcanvas' == $navbarType ) { echo ' mt-7';	} else { echo 'mt-3'; } ?> HEADER_END">
 	<?php endif;
