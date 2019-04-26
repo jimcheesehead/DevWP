@@ -35,3 +35,10 @@ function devwp_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'devwp_pingback_header' );
+
+	function devwp_has_header() {
+		if ( get_header_image() ) {
+			return 'has-header';
+		}
+		return 'has-NO-header';
+	}
